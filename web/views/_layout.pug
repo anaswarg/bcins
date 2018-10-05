@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    title #{ __('Blockchain for Insurance') }#{!title ? '' : ' -' + title }
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='og:title' content='CTS Blockchain for Insurance')
+    script(src='/js/northstar.js')
+    script(src='/js/northstar-forms.js')
+    script(src='/js/common.bundle.js')
+    script(src='/js/bootstrap.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/jquery-3.2.1.min.js')
+    script(src='/js/jssor.slider.min.js')
+    script(src='/socket.io/socket.io.js')
+    link(rel='alternate', href='?applang=en', hreflang='en-us')
+    link(rel='alternate', href='?applang=de', hreflang='de-de')
+    include _favicon
+    block header_exts
+  body#ibm-com.ibm-type
+    #ibm-content-wrapper
+      header
+      main(role='main', aria-labelledby='ibm-pagetitle-h1')
+        #ibm-pcon
+          #ibm-content
+            #ibm-content-body
+              #ibm-content-main   
+                block content
+    
+    #block-explorer
+    script(src='/js/block-explorer.bundle.js')
+    // scripts section
+    block scripts
